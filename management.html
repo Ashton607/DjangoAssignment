@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #9a3030;
+            margin: 20px;
+        }
+        .section {
+            border: 1px solid #232323;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .input-field {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            width: 80%;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        .important-notes ol {
+            padding-left: 20px;
+        }
+        .notification-controls {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .switch-container {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-left: 10px;
+        }
+        .switch {
+            background-color: #eee;
+            color: #333;
+            padding: 5px 10px;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .switch.on {
+            background-color: green;
+            color: white;
+        }
+        .switch.off {
+            background-color: red;
+            color: white;
+        }
+        .button {
+            background-color: #555;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #777;
+        }
+        .reminder-select {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="label">Task Name:</div>
+        <input type="text" class="input-field" value="Semester Test 1">
+        <div class="label">Due Date:</div>
+        <input type="date" class="input-field" value="2025-04-28">
+    </div>
+
+    <div class="section important-notes">
+        <div class="label">Important Notes:</div>
+        <ol>
+            <li>Study Chapter 11-12</li>
+            <li>Diagrams are involved</li>
+            <li>Test weighs 25%</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <div class="label">Notifications:</div>
+        <div class="notification-controls">
+            <span>[</span>
+            <span class="switch on">On</span>
+            <span>/</span>
+            <span class="switch off">Off</span>
+            <span>]</span>
+        </div>
+        <div class="label">Set Reminder:</div>
+        <select class="reminder-select">
+            <option value="1">1 day before</option>
+            <option value="2">2 days before</option>
+            <option value="7">1 week before</option>
+        </select>
+    </div>
+
+    <div class="section">
+        <a href="#" class="button">Task Completed</a>
+        <a href="#" class="button">Save Changes</a>
+        <a href="#" class="button">Back to dashboard</a>
+    </div>
+</body>
+</html>

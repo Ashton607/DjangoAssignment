@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weekly Overview</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #9a3030;
+      text-align: center;
+    }
+
+    hr {
+      margin: 30px 0;
+    }
+
+    .week-bar {
+      display: flex;
+      justify-content: center;
+      gap: 2px;
+      margin: 20px 0;
+    }
+
+    .day {
+      border: 1px solid #000;
+      padding: 10px 20px;
+      width: 80px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin: 20px 0;
+    }
+
+    button {
+      background-color: #666;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    button:hover {
+      background-color: #444;
+    }
+
+    .task-list {
+      text-align: left;
+      margin: 20px auto;
+      width: 300px;
+    }
+
+    .task {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px 0;
+    }
+
+    .edit-link {
+      text-decoration: none;
+      color: #0000EE;
+      margin-left: 10px;
+    }
+
+    .edit-link:hover {
+      text-decoration: underline;
+    }
+
+    .calendar-button {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <hr>
+  <h2>Weekly Overview Bar</h2>
+
+  <div class="week-bar">
+    <div class="day">MON</div>
+    <div class="day">TUE</div>
+    <div class="day">WED</div>
+    <div class="day">THU</div>
+    <div class="day">FRI</div>
+  </div>
+
+  <hr>
+
+  <div class="buttons">
+    <button>+Add Task</button>
+    <button>+Add Date</button>
+  </div>
+
+  <div class="task-list">
+    <p><strong>Task List:</strong></p>
+    <ol>
+      <li class="task">
+        Semester Test 1
+        <span>Due: April 28 <a href="#" class="edit-link">[Edit]</a></span>
+      </li>
+      <li class="task">
+        Group Assignment
+        <span>Due: May 01 <a href="#" class="edit-link">[Edit]</a></span>
+      </li>
+      <li class="task">
+        Individual Assignment
+        <span>Due: May 15 <a href="#" class="edit-link">[Edit]</a></span>
+      </li>
+    </ol>
+  </div>
+
+  <hr>
+
+  <div class="calendar-button">
+    <button>View Calendar</button>
+  </div>
+
+</body>
+</html>
